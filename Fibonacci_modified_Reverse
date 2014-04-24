@@ -10,18 +10,19 @@ import java.util.Scanner;
 public class Fibonacci{
 
     public static void main(String[] args) {
-        int x;
+        String str1=new String();
+        String str2=new String();
         Fibonacci f= new Fibonacci();
         System.out.print      ("Masukkan angka deret Fibonacci    : ");
         Scanner inputFibonacci = new Scanner(System.in);
-        
         int fibonacciCount = inputFibonacci.nextInt();
-        x=0;
-        for (int i=1; i <= fibonacciCount; i++)
-            x=f.methodFibonacci(i)+x;
-        {
-            System.out.println  ("Jumlah Fibonacci adalah: "+x) ;
+        int x=0;
+        for (int i=1; i <= fibonacciCount; i++){
+            str1=Integer.toString (f.methodFibonacci(i));
+            str2=str1+" "+str2;
         }
+            System.out.println  ("Reverse Fibonacci adalah: "+str2) ;
+        
     }
     
     public static int methodFibonacci(int fibonacciInput)
