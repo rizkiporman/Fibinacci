@@ -1,0 +1,32 @@
+package fibonacci;
+import java.util.Scanner;
+
+public class Fibonacci{
+
+    public static void main(String[] args) {
+        System.out.print      ("Masukkan angka deret Fibonacci    : ");
+        Scanner inputFibonacci = new Scanner(System.in);
+        
+        int fibonacciCount = inputFibonacci.nextInt();
+        
+        for (int i=1; i <= fibonacciCount; i++)
+        {
+            System.out.println  ("Bilangan Fibonacci                : " + methodFibonacci(i));
+        }
+    }
+    
+    public static int methodFibonacci(int fibonacciInput)
+    {   
+        int x;
+        int n = fibonacciInput;
+        if(n <=0 || n<=1)
+        {
+           return n;
+        }
+       
+        else
+        {
+            return methodFibonacci(n-2) + methodFibonacci(n-1) ;
+        }    
+    }
+  }
