@@ -18,8 +18,9 @@ public class Fibonacci{
         int fibonacciCount = inputFibonacci.nextInt();
         x=0;
         for (int i=1; i <= fibonacciCount; i++)
+            x=f.methodFibonacci(i)+x;
         {
-            System.out.println  (x=f.methodFibonacci(i)+x) ;
+            System.out.println  ("Jumlah Fibonacci adalah: "+x) ;
         }
     }
     
